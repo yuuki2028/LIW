@@ -1,0 +1,9 @@
+name: LandInWar
+version: ${project.version}
+main: com.github.yuuki2028.liw.landinwar.LandInWar
+api-version: 1.13
+authors: [yuuki2028]
+description: LandInWar
+commands:
+  LIW:
+    description: 説明はないよ( ^ω^ )
