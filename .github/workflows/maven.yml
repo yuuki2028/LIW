@@ -16,11 +16,11 @@ jobs:
     - name: Build with Maven
       run:  mvn clean package
     - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
+      run:
+        git config --local user.email "yuuki1420@outlook.jp"
         git config --local user.name "GitHub Action"
-        git commit -m "Add changes" -a
+        git commit -m "Auto Pull" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: 37040ba2f6c56d4efcbf603d48cf5a62d8152cd7
