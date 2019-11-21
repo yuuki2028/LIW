@@ -5,4 +5,4 @@ git add .
 git commit -m "Auto Push"
 git branch -mv origin master
 git remote add origin https://github.com/yuuki2028/LIW
-git push origin master
+git push -u origin master
