@@ -15,9 +15,11 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run:  mvn clean package
-            git config --local user.email "yuuki1420@outlook.jp"
-            git config --local user.name "GitHub Action"
-            git commit -m "Auto Build" -a
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Add changes" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
