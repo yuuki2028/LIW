@@ -15,12 +15,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run:  mvn clean package
-    - name: Commit files
-      run: |
-        git config --local user.email "yuuki1420@outlook.jp" 
-        git config --local user.name "GitHub Action" 
-        git commit -m "Auto Pull" -a 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: 37040ba2f6c56d4efcbf603d48cf5a62d8152cd7
+    - name: Auto Pull
+      env:
+        GITHUB_TOKEN: 37040ba2f6c56d4efcbf603d48cf5a62d8152cd7
+      run: ./AP.sh
