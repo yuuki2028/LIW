@@ -16,7 +16,7 @@ jobs:
     - name: Build with Maven
       run:  mvn clean package
     - name: Commit files
-      run: ->
+      run: |
         git config --local user.email "yuuki1420@outlook.jp" 
         git config --local user.name "GitHub Action" 
         git commit -m "Auto Pull" -a 
